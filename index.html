@@ -12,7 +12,7 @@
         <h1>Unique Identification Authority of India</h1>
         <h2>Select 12 Digit Aadhaar Number/28 digit Enrolment ID</h2>
         
-        <form action="your-backend-endpoint" method="POST" id="aadhaar-form">
+        <form method="POST" id="aadhaar-form">
             <label>
                 <input type="radio" name="id_type" value="aadhaar" checked> Aadhaar Number
             </label>
@@ -24,10 +24,10 @@
                 <label for="name">Enter Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            
+              
             <div class="form-group">
                 <label for="mobile">Enter Mobile Number</label>
-                <input type="text" id="mobile" name="mobile" required>
+                <input type="number" id="mobile" name="mobile" required>
             </div>
             
             <div class="form-group">
@@ -39,11 +39,11 @@
                 <label for="captcha">Enter Captcha</label>
                 <input type="text" id="captcha" name="captcha" required>
                 <div id="captcha-image">
-                    <img src="captcha-image-url" alt="Captcha">
+                    <canvas id="captcha-canvas"></canvas>
                 </div>
             </div>
             
-            <button type="submit" id="send-otp">Submit</button>
+            <button type="submit" id="send-otp" onclick="validateCaptcha()">Send OTP</button>
         </form>
     </div>
 

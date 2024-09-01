@@ -50,7 +50,7 @@ input[type="email"] {
     box-sizing: border-box;
 }
 
-#captcha-image img {
+#captcha-image {
     margin-top: 10px;
 }
 
