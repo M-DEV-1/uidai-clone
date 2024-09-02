@@ -40,5 +40,5 @@ This project is intended for testing and development purposes. It does not carry
 
 ---
 
-For any issues or contributions, please refer to the [issues page](#) or contact the repository maintainer.
+For any issues or contributions, please refer to the [issues page](https://github.com/M-DEV-1/uidai-clone/issues) or contact the repository maintainer.
 
