@@ -9,10 +9,12 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
+    <div class="disclaimer">
+        <h1><strong>DISCLAIMER:</strong> SPARTANS 1672 TESTING</h1>
+        <p>This web form is not intended to mock or replicate the official Unique Identification Authority of India (UIDAI) website. It is created solely for the purpose of testing machine learning solutions that may be used to enhance or replace captcha solutions/challenges. The form's design and functionality are for experimental use only.</p>
+    </div>
     <div class="container">
-        <h1>Unique Identification Authority of India</h1>
-        <h2>Select 12 Digit Aadhaar Number/28 digit Enrolment ID</h2>
-        
+        <h1>TEST FORM</h1>
         <form method="POST" id="aadhaar-form">
             <label>
                 <input type="radio" name="id_type" value="aadhaar" checked> Aadhaar Number
@@ -42,8 +44,8 @@
                 <div id="captcha-image">
                     <canvas id="captcha-canvas"></canvas>
                 </div>
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAAikCpE9V9HZRU94"></div>
             </div>
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAAAikCpE9V9HZRU94"></div>
             <button type="submit" id="send-otp" onclick="validateCaptcha()">Send OTP</button>
         </form>
     </div>
